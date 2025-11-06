@@ -1,0 +1,100 @@
+
+body { 
+    margin: 0; 
+    font-family:Arial, Helvetica, sans-serif; 
+    /* Sticky Footer Setup */
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh;
+    /* Aplicamos un neutral claro para el fondo principal */
+    background-color: #f1eee9; 
+    color: #333333; /* Texto general oscuro */
+}
+
+/* El Page Layout usa Flex para que el contenido principal ocupe el espacio restante */
+.page-layout { 
+    display: flex; 
+    flex: 1; 
+} 
+
+
+main { 
+    flex: 1; 
+    padding: 20px; 
+}
+
+
+header { 
+    /* Usamos el color base principal */
+    background-color: #c1a9b2; 
+    color: white; /* Texto blanco para asegurar el contraste sobre el fondo oscuro */
+    padding: 20px 0; 
+}
+
+.bg-light {
+    /* Asegurar que el fondo del header sea el color base */
+    background-color: var(--color-base) !important;
+}
+
+
+footer { 
+    /* Usamos el Neutral Oscuro para el fondo */
+    background-color: #333333; 
+    color: #f8f8f8; /* Texto muy claro para asegurar el contraste */
+    padding: 15px; 
+    text-align: center; 
+    margin-top: auto; 
+}
+
+.hero-impact h2 {
+    /* El texto principal de la oferta */
+    color: rgb(6, 6, 6) !important; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.hero-impact p {
+    /* La descripción del banner */
+    color: #bfbfd4;
+}
+
+.hero-impact .btn-outline-light {
+    
+    border-width: 3px; /* Borde más grueso para mayor impacto */
+    font-size: 1.3rem;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.hero-impact  {
+    background-color: rgba(223, 223, 228, 0.919); 
+    text-emphasis-color: black;
+    color: var(--color-primary-accent); /* Color primario al hacer hover */
+    border-color: rgb(255, 255, 255);
+}
+
+
+/* Los Contenedores (Columnas) del Grid Personalizado */
+.grid-col { 
+    border: 1px solid #ccc; 
+    padding: 15px;
+    
+    background-color: #f0f8ee; 
+}
+
+/* Estilos para los títulos dentro de las columnas */
+.grid-col h3 { 
+   
+    border-bottom: 2px solid #5c749d; 
+    padding-bottom: 5px; 
+    margin-top: 0; 
+}
+
+/* Estilos para los items/tarjetas */
+.grid-item { 
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 10px; 
+    margin-bottom: 10px; 
+    /* Usamos una versión clara del Triádico 1 para el borde */
+    border: 1px solid #c8d9c1; 
+}
+
